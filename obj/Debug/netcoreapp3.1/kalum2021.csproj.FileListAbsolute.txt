@@ -21,3 +21,5 @@ C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\UsuariosView.baml
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\RoleView.g.cs
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\RoleView.baml
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\UsuarioView.g.cs
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\UsuarioView.baml

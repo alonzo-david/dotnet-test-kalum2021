@@ -1,30 +1,40 @@
+using System;
 using System.ComponentModel;
-using System.Collections.ObjectModel;
+using System.Windows.Input;
 using kalum2021.Models;
 
 namespace kalum2021.ModelView
 {
-    public class UsuarioViewModel : INotifyPropertyChanged
+    public class UsuarioViewModel : INotifyPropertyChanged, ICommand
     {
-        public UsuarioViewModel()
+        public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler CanExecuteChanged;
+        public UsuarioViewModel Instancia { get; set; }
+        public UsuariosViewModel UsuariosViewModel { get; set; }
+        public string Apellidos { get; set; }
+        public string Nombres { get; set; }
+        public string Email { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+
+
+        public UsuarioViewModel(UsuariosViewModel UsuariosViewModel)
         {
-            this.usuarios = new ObservableCollection<Usuarios>();
-            this.usuarios.Add(new Usuarios(1, "dalonzo", true, "David", "Alonzo", "d@gmail.com"));
-            this.usuarios.Add(new Usuarios(2, "clopez", true, "Cesar", "Lopez", "cl@gmail.com"));
-            this.usuarios.Add(new Usuarios(3, "jhernandez", true, "Josue", "Hernandez", "jh@gmail.com"));
+            Instancia = this;
+            this.UsuariosViewModel = UsuariosViewModel;
+        }
+        public bool CanExecute(object parametro)
+        {
+            return true;
         }
 
-        public void NotificarCambio(string propiedad)
+        public void Execute(object parametro)
         {
-            if(PropertyChanged != null)
+            if (parametro.Equals("Guardar"))
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(propiedad));
+                Usuarios nuevo = new Usuarios(100, Username, true, Nombres, Apellidos, Email);
+                this.UsuariosViewModel.agregarElemento(nuevo);
             }
         }
-
-        public ObservableCollection<Usuarios> usuarios { get; set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
-
 }

@@ -3,12 +3,12 @@ using kalum2021.ModelView;
 
 namespace kalum2021.Views
 {
-    public partial class UsuarioView : Window
+    public partial class UsuariosView : Window
     {
-        public UsuarioView()
+        public UsuariosView()
         {
             InitializeComponent();
-            UsuarioViewModel ModeloDatos = new UsuarioViewModel();
+            UsuariosViewModel ModeloDatos = new UsuariosViewModel();
             this.DataContext = ModeloDatos;
         }
     }

@@ -52,7 +52,7 @@ namespace kalum2021
         }*/
         public void VentanaUsuario(Object sender, RoutedEventArgs e)
         {
-            UsuarioView VentanaUsuario  = new UsuarioView();
+            UsuariosView VentanaUsuario  = new UsuariosView();
             VentanaUsuario.ShowDialog();
         }
 
