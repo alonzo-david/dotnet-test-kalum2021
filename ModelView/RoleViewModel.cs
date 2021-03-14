@@ -1,28 +1,36 @@
+using System;
 using System.ComponentModel;
-using System.Collections.ObjectModel;
+using System.Windows.Input;
 using kalum2021.Models;
 
 namespace kalum2021.ModelView
 {
-    public class RoleViewModel : INotifyPropertyChanged
+    public class RoleViewModel : INotifyPropertyChanged, ICommand
     {
-        public RoleViewModel()
+        public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler CanExecuteChanged;
+        public RoleViewModel Instancia {get; set;}
+        public RolesViewModel RolesViewModel {get; set;}
+        public string Nombre {get; set;}
+
+        public RoleViewModel(RolesViewModel RolesViewModel)
         {
-            roles = new ObservableCollection<Roles>() ;
-            roles.Add(new Roles(1, "ROLE_ADMIN"));
-            roles.Add(new Roles(2, "ROLE_USER"));
-            roles.Add(new Roles(3, "ROLE_SUPERV"));
+            this.Instancia = this;
+            this.RolesViewModel = RolesViewModel;
         }
 
-        public void NotificarCambio(string propiedad)
+        public bool CanExecute(object parametro)
         {
-            if(PropertyChanged != null)
+            return true;
+        }
+
+        public void Execute(object parametro)
+        {
+            if(parametro.Equals("Guardar"))
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(propiedad));
+                Roles nuevo = new Roles(100, Nombre);
+                this.RolesViewModel.agregarElemento(nuevo);
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Roles> roles {get; set;}
     }
 }

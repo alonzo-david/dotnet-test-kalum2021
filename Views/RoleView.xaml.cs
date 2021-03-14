@@ -5,11 +5,11 @@ namespace kalum2021.Views
 {
     public partial class RoleView : Window
     {
-        public RoleView()
+        public RoleView(RolesViewModel RolesViewModel)
         {
             InitializeComponent();
-            RoleViewModel ModeloDatos = new RoleViewModel();
-            this.DataContext = ModeloDatos;
+            RoleViewModel Modelo = new RoleViewModel(RolesViewModel);
+            this.DataContext = Modelo;
         }
     }
 }

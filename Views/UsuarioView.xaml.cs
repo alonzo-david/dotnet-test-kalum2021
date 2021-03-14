@@ -10,6 +10,7 @@ namespace kalum2021.Views
             InitializeComponent();
             UsuarioViewModel Modelo = new UsuarioViewModel(UsuariosViewModel);
             this.DataContext = Modelo;
+            
         }
     }
 }

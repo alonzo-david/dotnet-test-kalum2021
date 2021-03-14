@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\
+c:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\
 kalum2021
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\App.xaml
-4-1792145422
+c:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\App.xaml
+52072315701
 
-14347369090
-1922054362486
-MainWindow.xaml;Views\RoleView.xaml;Views\UsuariosView.xaml;Views\UsuarioView.xaml;
+17-160178823
+192674553305
+MainWindow.xaml;Views\RolesView.xaml;Views\RoleView.xaml;Views\UsuariosView.xaml;Views\UsuarioView.xaml;
 
-False
+True
 
