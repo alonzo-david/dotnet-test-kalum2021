@@ -25,3 +25,10 @@ C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\RolesView.baml
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\RoleView.g.cs
 C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\Views\RoleView.baml
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\bin\Debug\netcoreapp3.1\de\MahApps.Metro.resources.dll
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\dajua\Documents\kinal\NET\dev\clase2\kalum2021\obj\Debug\netcoreapp3.1\kalum2021.csproj.CopyComplete

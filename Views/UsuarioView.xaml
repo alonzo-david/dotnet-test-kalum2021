@@ -1,44 +1,46 @@
-<Window x:Class="kalum2021.Views.UsuarioView"
+<mah:MetroWindow x:Class="kalum2021.Views.UsuarioView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        Dialog:DialogParticipation.Register="{Binding}"
         xmlns:local="clr-namespace:kalum2021"
         mc:Ignorable="d"
-        Title="Usuario" Height="450" Width="800" >
+        Title="Usuario" Height="300" Width="800" Name="FrmUsuario" >
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
         <Label Content="Apellidos" Grid.Row = "0" Grid.Column="0"  />
-        <TextBox Grid.Row = "0" Grid.Column="1" Text="{Binding Apellidos}" />
+        <TextBox Grid.Row = "0" Grid.Column="1" Text="{Binding Apellidos}" Margin="0,5,0,0"/>
 
         <Label Content="Nombres" Grid.Row = "1" Grid.Column="0" />
-        <TextBox Grid.Row = "1" Grid.Column="1" Text="{Binding Nombres}"/>
+        <TextBox Grid.Row = "1" Grid.Column="1" Text="{Binding Nombres}" Margin="0,5,0,0"/>
 
         <Label Content="Email" Grid.Row = "2" Grid.Column="0" />
-        <TextBox Grid.Row = "2" Grid.Column="1" Text="{Binding Email}"/>
+        <TextBox Grid.Row = "2" Grid.Column="1" Text="{Binding Email}" Margin="0,5,0,0"/>
 
         <Label Content="Username" Grid.Row = "3" Grid.Column="0" />
-        <TextBox Grid.Row = "3" Grid.Column="1" Text="{Binding Username}"/>
+        <TextBox Grid.Row = "3" Grid.Column="1" Text="{Binding Username}" Margin="0,5,0,0"/>
 
-        <Label Content="Password" Grid.Row = "4" Grid.Column="0" />
-        <PasswordBox x:Name="TxtPassword" Grid.Row = "4" Grid.Column="1" />
+        <Label Content="Password" Grid.Row = "4" Grid.Column="0" Height="{Binding HeighLblPassword}" />
+        <PasswordBox x:Name="TxtPassword" Grid.Row = "4" Grid.Column="1" Height="{Binding HeighTxtPassword}"  Margin="0,5,0,0"/>
 
-        <StackPanel Grid.Row = "5" Grid.Column="0" Orientation="Horizontal" >
-            <Button  Content="Guardar" Command="{Binding Instancia}" CommandParameter="Guardar" />
-            <Button  Content="Cancelar" Command="{Binding Instancia}" CommandParameter="Cancelar" />
-        </StackPanel>
+        <DockPanel Margin="5"  Grid.Row = "5" Grid.ColumnSpan="2"  >
+            <Button Width="200" Content="Guardar" HorizontalAlignment="Right" Command="{Binding Instancia}" CommandParameter="{Binding ElementName=FrmUsuario}" />
+        </DockPanel>
         
     </Grid>
-</Window>
+</mah:MetroWindow>
